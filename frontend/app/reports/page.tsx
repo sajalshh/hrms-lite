@@ -38,7 +38,7 @@ export default function ReportsPage() {
       </div>
 
       {sortedEmployees.length > 0 && (
-        <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-6 text-white shadow-lg flex items-center justify-between">
+        <div className="bg-linear-to-r from-blue-600 to-indigo-600 rounded-2xl p-6 text-white shadow-lg flex items-center justify-between">
           <div>
             <div className="flex items-center gap-2 mb-1">
               <Trophy className="text-yellow-300" size={20} />
@@ -59,7 +59,7 @@ export default function ReportsPage() {
 
       <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse min-w-[600px]">
+          <table className="w-full text-left border-collapse min-w-150">
             <thead className="bg-slate-50 text-slate-500 uppercase text-xs font-bold tracking-wider">
               <tr>
                 <th className="p-5 border-b border-slate-100">Rank</th>

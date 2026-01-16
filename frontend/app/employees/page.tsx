@@ -142,9 +142,6 @@ export default function EmployeesPage() {
         </form>
       </div>
 
-      {/* ===================== */}
-      {/* MOBILE UI (Accordion) */}
-      {/* ===================== */}
       <div className="md:hidden space-y-3">
         {loading ? (
           <div className="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 text-center text-slate-400">
@@ -163,7 +160,6 @@ export default function EmployeesPage() {
                 key={emp.id}
                 className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden"
               >
-                {/* Click row */}
                 <button
                   onClick={() =>
                     setOpenEmployeeId((prev) =>
@@ -191,7 +187,6 @@ export default function EmployeesPage() {
                   </div>
                 </button>
 
-                {/* Shutter dropdown */}
                 <div
                   className={`grid transition-all duration-300 ease-in-out ${
                     isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
@@ -199,7 +194,6 @@ export default function EmployeesPage() {
                 >
                   <div className="overflow-hidden">
                     <div className="px-4 pb-4 pt-0 space-y-3">
-                      {/* Email */}
                       <div className="flex items-start justify-between gap-3 text-sm">
                         <span className="text-slate-500 shrink-0 flex items-center gap-2">
                           <Mail size={16} className="text-slate-400" />
@@ -209,16 +203,12 @@ export default function EmployeesPage() {
                           {emp.email}
                         </span>
                       </div>
-
-                      {/* Department */}
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-slate-500">Department</span>
                         <span className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-semibold capitalize border border-blue-100">
                           {emp.department}
                         </span>
                       </div>
-
-                      {/* Stats */}
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-slate-500">Present Days</span>
                         <span className="text-slate-700 font-semibold">
@@ -254,7 +244,7 @@ export default function EmployeesPage() {
                 <th className="p-5 border-b border-slate-100">Email</th>
                 <th className="p-5 border-b border-slate-100">Department</th>
                 <th className="p-5 border-b border-slate-100 text-center">
-                  Stats
+                  Present
                 </th>
                 <th className="p-5 border-b border-slate-100 text-right">
                   Actions

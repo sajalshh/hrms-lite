@@ -1,11 +1,11 @@
-# HRMS Lite 🚀
+# HRMS Lite
 
 **HRMS Lite** is a lightweight, modern Human Resource Management System designed to simplify employee data management and attendance tracking. Built with performance and scalability in mind, it features a responsive Next.js frontend and a high-performance FastAPI backend.
 
 ![Project Status](https://img.shields.io/badge/status-live-success)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-## ✨ Features
+## Features
 
 * **Employee Management:** Add, view, and edit employee details efficiently.
 * **Daily Attendance:** Mark attendance (Present/Absent) with a single click.
@@ -13,7 +13,7 @@
 * **Real-time Status:** Instant visual feedback on attendance status.
 * **Secure Deployment:** Fully HTTPS compliant setup on Vercel and VPS.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend:** Next.js 15 (React), Tailwind CSS, Lucide Icons, Axios.
 * **Backend:** Python FastAPI, SQLAlchemy, Pydantic.
@@ -22,7 +22,7 @@
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these instructions to set up the project locally.
 
@@ -31,7 +31,7 @@ Follow these instructions to set up the project locally.
 * Python (v3.10+)
 * MySQL Server
 
-### 1️⃣ Backend Setup (FastAPI)
+### 1 Backend Setup (FastAPI)
 
 1.  Navigate to the backend folder:
     ```bash
@@ -55,7 +55,7 @@ Follow these instructions to set up the project locally.
     ```
     *The API will be available at `http://localhost:8005`*
 
-### 2️⃣ Frontend Setup (Next.js)
+### 2 Frontend Setup (Next.js)
 
 1.  Navigate to the frontend folder:
     ```bash
@@ -75,7 +75,7 @@ Follow these instructions to set up the project locally.
 
 ---
 
-## 🌐 Deployment Architecture
+## Deployment Architecture
 
 This project is deployed using a hybrid architecture to ensure performance and security:
 
@@ -91,7 +91,7 @@ This project is deployed using a hybrid architecture to ensure performance and s
 
 ---
 
-## 📝 Notes for Reviewers
+## Notes for Reviewers
 
 If you are running the frontend locally against the live backend, please ensure your `.env.local` points to the HTTPS backend URL to avoid Mixed Content errors.
 
